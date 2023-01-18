@@ -11,6 +11,7 @@ public class Address {
     @Id
     @GeneratedValue
     private Long id;
+    private String auteur;
     private Date creation;
     private String content;
 	public Date getCreation() {
@@ -24,5 +25,11 @@ public class Address {
 	}
 	public void setContent(String content) {
 		this.content = content;
+	}
+	public String getAuteur() {
+		return auteur;
+	}
+	public void setAuteur(String auteur) {
+		this.auteur = auteur;
 	}
 }

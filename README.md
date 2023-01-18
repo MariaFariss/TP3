@@ -3,11 +3,11 @@
 ///////////////////////Dependencies/////////////////
     - Web : cette dépendance inclut généralement un ensemble de bibliothèques pour la création d'applications Web, telles que la prise en charge de la gestion des requêtes et des réponses HTTP, la diffusion de pages Web et la gestion des sockets Web.
 
-   -  JPA : Java Persistence API (JPA) est une spécification Java pour la gestion, la persistance et l'accès aux données entre les objets/classes Java et une base de données relationnelle. Il fait partie de Java Enterprise Edition (JavaEE).
+   - JPA : Java Persistence API (JPA) est une spécification Java pour la gestion, la persistance et l'accès aux données entre les objets/classes Java et une base de données relationnelle. Il fait partie de Java Enterprise Edition (JavaEE).
 
-   -  Hibernate : Hibernate est un framework open-source Object-Relational Mapping (ORM) pour Java. Il est utilisé pour mapper des objets Java sur des tables de base de données, et il est souvent utilisé conjointement avec JPA pour fournir une couche de persistance plus puissante et flexible pour les applications Java.
+   - Hibernate : Hibernate est un framework open-source Object-Relational Mapping (ORM) pour Java. Il est utilisé pour mapper des objets Java sur des tables de base de données, et il est souvent utilisé conjointement avec JPA pour fournir une couche de persistance plus puissante et flexible pour les applications Java.
 
-    - H2 : H2 est un système de gestion de base de données relationnelle open source basé sur Java. Il est souvent utilisé comme base de données en mémoire à des fins de test et de développement en raison de son faible encombrement et de son temps de démarrage rapide.
+    - Spring H2 : H2 est un système de gestion de base de données relationnelle open source basé sur Java. Il est souvent utilisé comme base de données en mémoire à des fins de test et de développement en raison de son faible encombrement et de son temps de démarrage rapide.
 
    -  DevTools : il s'agit d'un ensemble d'outils généralement utilisés au cours du processus de développement, tels que des outils de création, de test et de débogage de l'application.
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import com.ensim.TP3.model.AddressRepository;
 
 @Controller
-public class AddressController {
+public class AdressesController {
 
     @Autowired
     AddressRepository addressRepository;
@@ -18,4 +18,9 @@ public class AddressController {
         model.addAttribute("allAddresses", addressRepository.findAll());
         return "addresses";
     }
+    @GetMapping("/adresse")
+    public String formMeteo(Model model) {
+        return "formMeteo";
+    }
+
 }

@@ -1,5 +1,5 @@
-# TP3FARISS
-
+# DM Note TP3-4 FARISS
+*******DM 1/2******
 ///////////////////////Dependencies/////////////////
     
 - Web : cette dépendance inclut généralement un ensemble de bibliothèques pour la création d'applications Web, telles que la prise en charge de la gestion des requêtes et des réponses HTTP, la diffusion de pages Web et la gestion des sockets Web.
@@ -39,4 +39,15 @@ oui, c'est bien intégré
 //////////////////////////Question 30//////////////////////
 J’ai intégré la référence du lien de Bootstrap dans le head du fichier navbar.html.
 
+****DM 2/2*****
+///Etape 6 ///
+1- Oui, on a besoin d'un token d'authentification. (En rajoutant une ligne header qui contient notre token qu'on a cree)
+2- URL utilise : "https://api.meteo-concept.com/api/forecast/daily/periods?latlng=48.086%2C-2.635&insee=35238"
+3- Methode HTTP que j'ai utilise est la methode GET
+4- Pour mettre les parametres dans l'url, on ecrit notre premier attribut apres '?' et pour ajouter d'autres attribute apres on ajoute '&' .
+5- Afficher le temperature : forecast > temp2m
+Afficher la prevention : forecast > weather
+
+#lien Github 
+https://github.com/MariaFariss/TPNote.git
 

@@ -42,7 +42,7 @@ J’ai intégré la référence du lien de Bootstrap dans le head du fichier nav
 ****DM 2/2*****
 ///Etape 6 ///
 1- Oui, on a besoin d'un token d'authentification. (En rajoutant une ligne header qui contient notre token qu'on a cree)
-2- URL utilise : "https://api.meteo-concept.com/api/forecast/daily/periods?latlng=48.086%2C-2.635&insee=35238"
+2- URL utilise : "https://api.meteo-concept.com/api/forecast/daily?latlng=48.086%2C-2.635&insee=35238"
 3- Methode HTTP que j'ai utilise est la methode GET
 4- Pour mettre les parametres dans l'url, on ecrit notre premier attribut apres '?' et pour ajouter d'autres attribute apres on ajoute '&' .
 5- Afficher le temperature : forecast > temp2m

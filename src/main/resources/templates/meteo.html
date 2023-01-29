@@ -3,9 +3,15 @@
 
 <head>
     <body>
-        <h1>Le resultat de votre recherche est : </h1></body></head></br>
+        <p>Le resultat de votre recherche est : </p></body></head></br>
         <p th:text="${nomTemplate} + ' !'" />
         <p th:text="${coordinates0[0]} + ' !'" />
         <p th:text="${coordinates0[1]} + ' !'" />
+        <!-- Etape 5 -->
+        <p>Pour l'api meteo (etape 5)</p>
+        <p th:text= "'insee: ' + ${insee} + ' !'" />
+        <p th:text=" 'cp: '+${cp} + ' !'" />
+        <p th:text="'name: '+${name} + ' !'" />
+
     </body>
 </html>

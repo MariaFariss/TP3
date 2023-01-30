@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,17 +31,18 @@ public class MeteoController {
 		
 		for (int i = 0; i < myresponse.features().length; i++) {
 			model.addAttribute("coordinates" + i, myresponse.features()[i].geometry().coordinates());
+			model.addAttribute(nameGET, myresponse.features()[0].properties().citycode());
 		}
 		// Etape5
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("Authorization", "Bearer ae2b95fedaf1e06c2e13e7454dee3a87434e33df6ef81fc0f18f3b72a17ac825");
 		HttpEntity<String> request = new HttpEntity<>(headers);
-		ResponseEtape5 response = restTemplate.exchange("https://api.meteo-concept.com/api/forecast/daily?latlng=48.086%2C-2.635&insee=35238", HttpMethod.GET, request,
+		ResponseEtape5 response = restTemplate.exchange("https://api.meteo-concept.com/api/forecast/daily?latlng="+myresponse.features()[0].geometry().coordinates()[0]+"%2C"+myresponse.features()[0].geometry().coordinates()[1]+"&insee="+myresponse.features()[0].properties().citycode(), HttpMethod.GET, request,
 		ResponseEtape5.class).getBody();
 		model.addAttribute("insee", response.city().insee());
 		model.addAttribute("name", response.city().name());
 		model.addAttribute("cp", response.city().cp());
-		model.addAttribute("forecast", response.forecast()[0]);
+		model.addAttribute("forecast", response.forecast());
 		return "meteo";
 	}
 
